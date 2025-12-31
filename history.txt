@@ -1,0 +1,10 @@
+Result: The computer win, Opponent: lev
+Result: lev won, Opponent: computer
+Result: lev won, Opponent: ol
+Result: lev won, Opponent: ko
+Result: The computer win, Opponent: pop
+Result: lev won, Opponent: kp
+Result: lev won, Opponent: roni
+Result: lev won, Opponent: h
+Result: lev won, Opponent: pop
+Result: lev won, Opponent: ron

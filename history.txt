@@ -8,3 +8,4 @@ Result: lev won, Opponent: roni
 Result: lev won, Opponent: h
 Result: lev won, Opponent: pop
 Result: lev won, Opponent: ron
+Result: lev won, Opponent: nah

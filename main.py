@@ -17,7 +17,7 @@ def main():
 
     # --- שלב 2: ניתוב לפי בחירת הטעינה ---
     if load == "yes":
-        list_record, flag = load_save.load()
+        list_record, flag, _ = load_save.load()
         size = len(list_record)  # מזהה אוטומטית אם זה 3 או 4 מהקובץ
 
         if flag == "h":

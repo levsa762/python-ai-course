@@ -1,5 +1,5 @@
-import draw as d
-import draw as d
+import draw 
+
 
 def get_turn(list_record):
     count = 0
@@ -14,7 +14,7 @@ def check_win(list_record, char, name, size=3, is_sim=False):
         # הפקודה all בודקת אם כל התאים בשורה i הם ה-char המבוקש
         if all(list_record[i][j] == char for j in range(size)):
             if not is_sim:
-                d.draw_win(i+1, 1, i+1, size, size)
+                draw.draw_win(i+1, 1, i+1, size, size)
                 print(f"{name} won!")
             return True
 
@@ -23,21 +23,21 @@ def check_win(list_record, char, name, size=3, is_sim=False):
         # בודק אם כל התאים בעמודה j הם ה-char המבוקש
         if all(list_record[i][j] == char for i in range(size)):
             if not is_sim:
-                d.draw_win(1, j+1, size, j+1, size)
+                draw.draw_win(1, j+1, size, j+1, size)
                 print(f"{name} won!")
             return True
 
     # בדיקת אלכסון ראשי (מלמעלה שמאל למטה ימין)
     if all(list_record[i][i] == char for i in range(size)) and char != " ":
         if not is_sim:
-            d.draw_win(1, 1, size, size, size)
+            draw.draw_win(1, 1, size, size, size)
             print(f"{name} won!")
         return True
 
     # בדיקת אלכסון משני (מלמעלה ימין למטה שמאל)
     if all(list_record[i][size - 1 - i] == char for i in range(size)) and char != " ":
         if not is_sim:
-            d.draw_win(1, size, size, 1, size)
+            draw.draw_win(1, size, size, 1, size)
             print(f"{name} won!")
         return True
 

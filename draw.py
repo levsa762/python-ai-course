@@ -1,27 +1,27 @@
-import turtle as t
+import turtle 
 ROW=150
 
 def draw_game(size=3):
-    t.hideturtle()
-    t.speed(0)
+    turtle.hideturtle()
+    turtle.speed(0)
     cell_size = (ROW * 2) / size
     for i in range(1, size):
-        t.penup()
-        t.goto(-ROW + i * cell_size, ROW)
-        t.pendown()
-        t.goto(-ROW + i * cell_size, -ROW)
-        t.penup()
-        t.goto(-ROW, ROW - i * cell_size)
-        t.pendown()
-        t.goto(ROW, ROW - i * cell_size)
+        turtle.penup()
+        turtle.goto(-ROW + i * cell_size, ROW)
+        turtle.pendown()
+        turtle.goto(-ROW + i * cell_size, -ROW)
+        turtle.penup()
+        turtle.goto(-ROW, ROW - i * cell_size)
+        turtle.pendown()
+        turtle.goto(ROW, ROW - i * cell_size)
 
 def draw_move(row, col, player, size=3):
     cell_size = (ROW * 2) / size
     x = -ROW + (col - 1) * cell_size + (cell_size / 2)
     y = ROW - (row - 1) * cell_size - (cell_size / 1.5)
-    t.penup()
-    t.goto(x, y)
-    t.write(player, align="center", font=("Arial", int(120/size), "bold"))
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.write(player, align="center", font=("Arial", int(120/size), "bold"))
 
 def draw_win(frmx, frmy, dstx, dsty, size=3):
     cell_size = (ROW * 2) / size
@@ -29,8 +29,8 @@ def draw_win(frmx, frmy, dstx, dsty, size=3):
     y = ROW - (frmx - 1) * cell_size - (cell_size / 2)
     dst_x = -ROW + (dsty - 1) * cell_size + (cell_size / 2)
     dst_y = ROW - (dstx - 1) * cell_size - (cell_size / 2)
-    t.penup()
-    t.goto(x, y)
-    t.pensize(3)
-    t.pendown()
-    t.goto(dst_x, dst_y)
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pensize(3)
+    turtle.pendown()
+    turtle.goto(dst_x, dst_y)

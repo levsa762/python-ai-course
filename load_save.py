@@ -19,7 +19,7 @@ def load():
     except:
         print("No saved game found. Starting a new board.")
         list_record = [[" " for _ in range(3)] for _ in range(3)]
-        return list_record, "h", "X"
+        return list_record, "h"
 
 def history(winner_msg, opponent):
     try:

@@ -1,4 +1,7 @@
-import turtle 
+# Student1 name: Nachman Zilberman Id: 322255738
+# Student2 name: Lev sakaju Id: 209266667
+
+import turtle
 ROW=150
 
 def draw_game(size=3):

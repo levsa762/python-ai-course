@@ -1,5 +1,7 @@
-import draw 
+# Student1 name: Nachman Zilberman Id: 322255738
+# Student2 name: Lev sakaju Id: 209266667
 
+import draw
 
 def get_turn(list_record):
     count = 0
@@ -46,7 +48,7 @@ def check_win(list_record, char, name, size=3, is_sim=False):
 def full(list_record):
     for row in list_record:
         if " " in row: return True
-    print("Tie!")
+
     return False
 
 def check_point(list_record, x, y):

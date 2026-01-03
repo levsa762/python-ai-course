@@ -1,3 +1,6 @@
+# Student1 name: Nachman Zilberman Id: 322255738
+# Student2 name: Lev sakaju Id: 209266667
+
 # test_games.py
 import games
 

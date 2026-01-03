@@ -1,4 +1,7 @@
-import random 
+# Student1 name: Nachman Zilberman Id: 322255738
+# Student2 name: Lev sakaju Id: 209266667
+
+import random
 import to_check
 import draw 
 import load_save
